@@ -7,12 +7,12 @@ Penjelasan 100 codingan No 1-10
   
 int main(){  
     char a[100];        //Deklarasi Variabel  
-    scanf("%[^\n]",&a); //input kalimat sampai spasi 
+    scanf("%[^\n]",&a); //input kalimat sampai enter 
     printf("%s\n",a);   //print kalimat yg diinputkan  
     return 0;  
 }  
 	Penjelasan :
-Program tersebut meminta user untuk menginputkan kalimat bebas, dimana kalimat setelah spasi tidak akan di simpan.
+Program tersebut meminta user untuk menginputkan kalimat bebas, dimana kalimat setelah enter tidak akan di simpan.
 	Input :
 Input dari program tersebut berupa kalimat, yang mana kalimat 	setelah spasi tidak akan disimpan.
 	Output :
