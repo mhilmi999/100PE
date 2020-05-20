@@ -96,7 +96,8 @@ printf("%d %d %d\n",c,f,i);
 return 0;  
 }  
 	Penjelasan :
-Program tersebut akan menghitung transpose suatu matriks 	dengan ordo dan baris 3x3, perhitungannya adalah	dengan 	melakukan penukaran posisi setiap variabel.
+Program tersebut akan menghitung transpose suatu matriks 	dengan ordo dan baris 3x3, perhitungannya adalah	dengan 	
+melakukan penukaran posisi setiap variabel.
 	Input :
 Matriks yang akan di transpose
 	Output :
@@ -116,7 +117,9 @@ if (N>0) printf("%d\n",N); //print kalau angka lbh besar dr 0
 return 0;  
 }  
 	Penjelasan :
-Program untuk mencetak angka yang lebih besar dari pada nol, dengan menggunakan logika if yang mana jika angka yang diinputkan oleh user lebih besar dari nol maka akan mencetak kembali angka tersebut. Jika tidak, program tidak akan melakukan apa-apa.
+Program untuk mencetak angka yang lebih besar dari pada nol, dengan menggunakan logika if yang mana jika angka yang 
+diinputkan oleh user lebih besar dari nol maka akan mencetak kembali angka tersebut. Jika tidak, program tidak akan 
+melakukan apa-apa.
 	Input :
 Input dari program berupa angka
 	Output :
@@ -137,7 +140,8 @@ printf("%d\n",N);
 return 0;  
 }  
 	Penjelasan :
-Progam untuk mencetak bilangan genap dan lebih besar dari 	pada nol, jikan kurang dari nol dan bukan merupakan bilangan 	genap. Program tidak akan melakukan apa-apa.
+Progam untuk mencetak bilangan genap dan lebih besar dari 	pada nol, jikan kurang dari nol dan bukan merupakan 
+bilangan 	genap. Program tidak akan melakukan apa-apa.
 	Input :
 Input berupa satu angka bertipe bilangan bulat
 	Output :
@@ -160,7 +164,9 @@ printf("nol\n"); //jika angka = 0
 return 0;  
 }  
 	Penjelasan :
-Program untuk menentukan suatu akan termasuk bilangan negatif atau positif, dengan menggunakan percabangan yang mana jika bilangan yang diinputkan user lebih besar dari pada nol maka akan mencetak positif, jika lebih kecil dari nol akan mencetak negatf dan jika sama dengan nol akan mencetak nol
+Program untuk menentukan suatu akan termasuk bilangan negatif atau positif, dengan menggunakan percabangan yang mana 
+jika bilangan yang diinputkan user lebih besar dari pada nol maka akan mencetak positif, jika lebih kecil dari nol 
+akan mencetak negatf dan jika sama dengan nol akan mencetak nol
 	Input :
 Bilangan yang akan ditentukan termasuk bilangan positif, negatif 	atau nol.
 	Output :
@@ -185,7 +191,10 @@ printf("puluhribuan\n"); //angka puluhribuan
 return 0;  
 }  
 	Penjelasan :
-Program untuk menentukan suatu bilangan apakah termasuk 	bilangan puluhribuan, ribuan, ratusan, puluhan, atau satuan. 	Dengan melakukan logika percabangan. Yang mana jika bilangan 	kurang dari 10 mencetak satuan, jika kurang dari 100 mencetak 	puluhan, jika kurang dari 1000 mencetak ratusan, dan jika kurang 	dari 10000 mencetak ribuan, dan jika melebihinya akan mencetak 	puluhribuan.
+Program untuk menentukan suatu bilangan apakah termasuk 	bilangan puluhribuan, ribuan, ratusan, puluhan, atau satuan. 	
+Dengan melakukan logika percabangan. Yang mana jika bilangan 	kurang dari 10 mencetak satuan, jika kurang dari 100 mencetak 	
+puluhan, jika kurang dari 1000 mencetak ratusan, dan jika kurang 	dari 10000 mencetak ribuan, dan jika melebihinya akan 
+mencetak 	puluhribuan.
 	Input :
 Bilangan yang akan ditentukan
 	Output :
@@ -207,7 +216,9 @@ else printf("%d\n",hasil);
 return 0;  
 }  
 	Penjelasan :
-Program tersebut merupakan program untuk menghitung jarak manhattan, jarak manhattan merupakan jarak dari suatu titik menuju suatu titik lainnya pada suatu koodinat kartesius dengan menyusuri bagian vertikal dan horizontal tanpa pernah kembali. Secara sederhana jumlah dari selisih absis dan selisih ordinatnya.
+Program tersebut merupakan program untuk menghitung jarak manhattan, jarak manhattan merupakan jarak dari suatu 
+titik menuju suatu titik lainnya pada suatu koodinat kartesius dengan menyusuri bagian vertikal dan horizontal tanpa 
+pernah kembali. Secara sederhana jumlah dari selisih absis dan selisih ordinatnya.
 	Input :
 Empat bilangan bulat yang akan dihitung jarak manhattannya 	dengan format x1, y1, x2, dan y2
 	Output :
