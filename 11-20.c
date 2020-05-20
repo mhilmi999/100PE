@@ -27,7 +27,8 @@ return 0;
 Penjelasan :
 mencari data terbesar yang sering keluar dari array inputan
 buat array untuk menyimpan kemunculan suatu angka. Misal input nya 5, maka array indeks 5 ditambah 1
-semisal array yang kita buat tadi isinya lebih besar dari nilai max awal kita, maka swap nilai nya. Dan seterusnya sampai array indeks terakhir
+semisal array yang kita buat tadi isinya lebih besar dari nilai max awal kita, maka swap nilai nya. 
+Dan seterusnya sampai array indeks terakhir
 cetak nilai max itu
 Input :
 1. Memasukkan jumlah data yang akan diinput
@@ -57,7 +58,9 @@ printf("%d\n",modus); return 0;
 
 13. Matriks
 Penjelasan :
-Soal meminta kita untuk menginput matriks lalu memutar matriks n x m itu sebesar 90 derajat searah jarum jam. Solusi yang saya dapatkan adalah mencetak indeks matriks dari kolom pertama , baris terakhir hingga baris pertama ; kolom kedua, baris terakhir hingga baris pertama ; dan seterusnya.
+Soal meminta kita untuk menginput matriks lalu memutar matriks n x m itu sebesar 90 derajat searah jarum jam. 
+  Solusi yang saya dapatkan adalah mencetak indeks matriks dari kolom pertama , baris terakhir hingga baris pertama ; 
+kolom kedua, baris terakhir hingga baris pertama ; dan seterusnya.
 Input :
 1. Memasukkan ordo matriks
 2. Memasukkan isi matriks
@@ -90,11 +93,14 @@ printf("\n"); }
 
 14. Perkalian matriks
 Penjelasan :
-Saya menggunakan nested loop agar bisa mengakses baris 1 matriks pertama dan kolom 1 matriks kedua untuk melakukan pengalian yang nantinya akan dijumlahkan untuk menjadi nilai baris 1 dan kolom 1 di matriks ketiga. Lalu akses baris 1 matriks pertama dan kolom 2 matriks kedua, untuk mengulang cara yang sama.
+Saya menggunakan nested loop agar bisa mengakses baris 1 matriks pertama dan kolom 1 matriks kedua untuk melakukan 
+pengalian yang nantinya akan dijumlahkan untuk menjadi nilai baris 1 dan kolom 1 di matriks ketiga. Lalu akses baris 1
+matriks pertama dan kolom 2 matriks kedua, untuk mengulang cara yang sama.
 Input :
 1. input matriks pertama nxm
 2. input matriks kedua mxp
-buat for looping nxp. Buat for loop lagi didalamnya sebesar m simpan hasil perkalian matriks 1 dan 2(baris dan kolom lihat source code atau penjelasan soal diatas) ke matriks 3
+buat for looping nxp. Buat for loop lagi didalamnya sebesar m simpan hasil perkalian matriks 1 dan 2
+(baris dan kolom lihat source code atau penjelasan soal diatas) ke matriks 3
 Output :
 Mencetak hasil perkalian matriks
 Source :
@@ -174,7 +180,8 @@ return 0;
 
 16. Operasi string
 Penjelasan :
-inti dari soalnya itu, ada 4 string inputan (sebut aja s1,s2,s3,s4). Cari di s1 apakah ada s2 didalamnya. Jika ada, hapus s2 didalam s1. Cek s3 di s1. Lalu tambahkan s4 setelah s3 pada s1
+inti dari soalnya itu, ada 4 string inputan (sebut aja s1,s2,s3,s4). Cari di s1 apakah ada s2 didalamnya. 
+Jika ada, hapus s2 didalam s1. Cek s3 di s1. Lalu tambahkan s4 setelah s3 pada s1
 Input :
 1. Memasukkan 4 buah string
 Output :
