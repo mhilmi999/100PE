@@ -48,7 +48,10 @@ int main(){
 
 
 •	Penjelasan :
-Karena belum adanya konfirmasi dari author terkait apa makna dari program secara spesifik, maka translator blm dapat mendefinisikan maksud dari program ini. Mengapa? Karena tidak adanya comment pasti pada codes program ini dan berbeda dengan makna palindrome Bahasa c pada umunya seperti https://polidamar.wordpress.com/bahasa-c/menentukan-palindrome-dengan-bahasa-c/
+Karena belum adanya konfirmasi dari author terkait apa makna dari program secara spesifik, 
+maka translator blm dapat mendefinisikan maksud dari program ini. Mengapa? Karena tidak adanya comment pasti pada 
+codes program ini dan berbeda dengan makna palindrome Bahasa c pada umunya seperti 
+https://polidamar.wordpress.com/bahasa-c/menentukan-palindrome-dengan-bahasa-c/
 •	Input :
 •	Output: 
 
@@ -137,11 +140,18 @@ int main(){
 }
 
 •	Penjelasan :
-a.	Pada dasarnya program ini mirip dengan matriks transpose, namun perbedaanya ialah jika matriks transpose bergerak clockwise.
-b.	Matriks ini dapat bergerak pindah tempat seperti transpose dengan arah tertentu missal ke kanan, kiri, atau bahkan flip secara vertical dan horizontal.
-c.	Prinsip kerja dari program ini ialah menggunakan for loop pada umumnya untuk menentukan baris dan kolom dari inputan user, setelah itu menggunakan konsep transpose namun dengan arah yang lebih variasi.
-•	Input : Diminta untuk memasukkan ordo matriks yang stara nxn, kemudian menginputkan sesuai dengan ordo tiap baris dan kolom.
-•	Output: user dapat melakukan pemutaran left, right, dan pada flip dapat pemutaran terhadap vertical dan horizontal pada matriks inputan.
+a.	Pada dasarnya program ini mirip dengan matriks transpose, namun perbedaanya ialah jika matriks transpose bergerak 
+    clockwise.
+b.	Matriks ini dapat bergerak pindah tempat seperti transpose dengan arah tertentu missal ke kanan, kiri, 
+    atau bahkan flip secara vertical dan horizontal.
+c.	Prinsip kerja dari program ini ialah menggunakan for loop pada umumnya untuk menentukan baris dan kolom 
+    dari inputan user, setelah itu menggunakan konsep transpose namun dengan arah yang lebih variasi.
+
+•	Input : Diminta untuk memasukkan ordo matriks yang stara nxn, kemudian menginputkan sesuai dengan ordo tiap baris dan 
+    kolom.
+
+•	Output: user dapat melakukan pemutaran left, right, dan pada flip dapat pemutaran terhadap vertical dan horizontal pada 
+    matriks inputan.
 
 
 
@@ -169,12 +179,19 @@ int main () {
 
 •	Penjelasan :
 a.	Program ini bertujuan untuk menghitung sejumlah angka inputan user dan mencari nilai rata-ratanya.
-b.	Cara kerja program ini ialah dengan meminta inputan sejumlah batas array terlebih dahulu kemudian diikuti inputan untuk mengisi sederet angka kepada array yang dimaksud.
-c.	Selanjutnya, perulangan for loop dengan batas maksimal adalah inputan batas array useryang bertujuan untuk menjumlah isi data dari array.
-d.	Setelah kondisi for loop memenuhi, maka dapat selesai perulangan dan masuk ke pembagian dri jumlah yg telah dihitung dengan banyaknya batas maksimal array yg ditentukan.
+b.	Cara kerja program ini ialah dengan meminta inputan sejumlah batas array terlebih dahulu kemudian diikuti inputan untuk 
+    mengisi sederet angka kepada array yang dimaksud.
+c.	Selanjutnya, perulangan for loop dengan batas maksimal adalah inputan batas array useryang bertujuan untuk menjumlah 
+    isi data dari array.
+d.	Setelah kondisi for loop memenuhi, maka dapat selesai perulangan dan masuk ke pembagian dri jumlah yg telah dihitung 
+    dengan banyaknya batas maksimal array yg ditentukan.
 e.	Terakhir tampilkan hasil ke layar pengguna.
-•	Input : Meminta berapa banyak tempat array yg akan diisi, kemudian diberikan sebuah deret angka dengan batas yg telah diisi tadi. Missal 6, kemudian inputan lanjutan ialah 5 4 3 5 2 1.
-•	Output: Menghasilkan perhitungan rata-rata atau dalam matematika dikenal sebagai mean. Misal hasil rata-rata dri inputan diatas adalah 3.
+
+•	Input : Meminta berapa banyak tempat array yg akan diisi, kemudian diberikan sebuah deret angka dengan batas yg telah 
+    diisi tadi. Missal 6, kemudian inputan lanjutan ialah 5 4 3 5 2 1.
+
+•	Output: Menghasilkan perhitungan rata-rata atau dalam matematika dikenal sebagai mean. Misal hasil rata-rata dri inputan
+    diatas adalah 3.
 
 
 
@@ -211,11 +228,17 @@ int main(){
 
 •	Penjelasan :
 a.	Program ini bertujuan untuk menghitung persamaan akar kuadrat.
-b.	Dimana meminta inputan a, b, dan c. Variabel-variabel ini nantinya akan digunakan mencari dari Diskriminan terlebih dahulu.
-c.	Selanjutnya setelah dihitung dapat nilai D, maka jika D >= 0 maka dapat dihitung akar1 dan akar 2 nya melalui rumus abc plus minus.
+b.	Dimana meminta inputan a, b, dan c. Variabel-variabel ini nantinya akan digunakan mencari dari Diskriminan 
+    terlebih dahulu.
+c.	Selanjutnya setelah dihitung dapat nilai D, maka jika D >= 0 maka dapat dihitung akar1 dan akar 2 nya melalui 
+    rumus abc plus minus.
 d.	Sebaliknya jika D<<=0, maka langsung menghasilkan angka imajiner.
-•	Input : angka untuk mengisi variable a,b, dan c. Yang nantinya akan digunakan sebagai mencari diskriminan terlebih dahulu, jika diskriminanya lebih besar sama dengan 0 maka dapat dicari akar akar persamaan kuadratnya.
-•	Output: Hasil dari akar-akar persamaan kuadratnya, baik itu dapat ditentukan maka akan menghasilkan akar1 dan akar2. Tetapi jika D<=0 maka langsung menghasilkan angka imajiner.
+    
+•	Input : angka untuk mengisi variable a,b, dan c. Yang nantinya akan digunakan sebagai mencari diskriminan terlebih dahulu,
+    jika diskriminanya lebih besar sama dengan 0 maka dapat dicari akar akar persamaan kuadratnya.
+        
+•	Output: Hasil dari akar-akar persamaan kuadratnya, baik itu dapat ditentukan maka akan menghasilkan akar1 dan akar2. 
+    Tetapi jika D<=0 maka langsung menghasilkan angka imajiner.
 
 
 
@@ -245,10 +268,14 @@ int main(){
 
 •	Penjelasan : (https://rumuspintar.com/fibonacci/)
 a.	Pada dasarnya ini adalah implementasi dari bil.fibonacci yang di programkan ke C dengan menggunakan perulangan while loop.
-b.	Cara kerja dri program ini ialah meminta inputan user sbg variable n yang nantinya n akan masuk sbg parameter dari perulangan while loop atau batasnya sampai tidak sama dengan n maka loop selesai.
-c.	Pada perulangan, terjadi proses swapping untuk menghasilkan bilangan fibo hingga sesuai banyaknya n test case yang diminta oleh user.
+b.	Cara kerja dri program ini ialah meminta inputan user sbg variable n yang nantinya n akan masuk sbg parameter dari 
+    perulangan while loop atau batasnya sampai tidak sama dengan n maka loop selesai.
+c.	Pada perulangan, terjadi proses swapping untuk menghasilkan bilangan fibo hingga sesuai banyaknya n test case yang 
+    diminta oleh user.
 d.	Ketika kondisi sudah memenuhi maka dapat di layar user.
+                  
 •	Input : Angka test case untuk berapa banyak bilangan Fibonacci yang nantinya akan ditampilkan ke layer. Misal 3
+                  
 •	Output: Menampilkan hasil bilangan Fibonacci dengan banyak sesuai inputan user. Misal 1 1 2.
 
 
@@ -278,8 +305,10 @@ int main(){
 •	Penjelasan :
 Program ini bertujuan utk menghitung factorial dri sebuah integer inputan test case.
 Menggunakan while loop dengan decrement persis seperti rumus dari factorial asli missal 4! = 4.3.2.1.
-Perulangan terus berlangsung hingga n berubah menjadi 1>1 baru selesai dan dapat di tampilkan ke layer.
+Perulangan terus berlangsung hingga n berubah menjadi 1>1 baru selesai dan dapat di tampilkan ke layar.
+                  
 •	Input : Sebuah angka test case yg akan dihitung faktorialnya missal 4.
+                  
 •	Output: merupakan hasil factorial dri 4 yaitu 24. 
 
 
@@ -324,9 +353,12 @@ int permutasi(int x, int y){
 a.	Pada dasarnya program ini seperti kalkulator khususnya menghitung factorial, kombinasi, dan permutasi.
 b.	Menggunakan for loop dengan sesuai batas yg dimasukkan oleh user.
 c.	Terdapat 3 fungsi yaitu factorial, kombinasi, dan permutasi.
-d.	Untuk factorial dilakukan perhitungan spt biasa contoh 5! = 5.4.3.2.1; sedangkan kombinasi menggunakan rumus n C k = 5C5 = 5! / (5-5)!.5! = 1. 
+d.	Untuk factorial dilakukan perhitungan spt biasa contoh 5! = 5.4.3.2.1; sedangkan kombinasi menggunakan 
+    rumus n C k = 5C5 = 5! / (5-5)!.5! = 1. 
 e.	Selanjutnya untuk permutasi dengan rumus n P k = 5 P 5 = 5!/(5-5)! = 120.
+                  
 •	Input : Angka test case yang akan dihitung baik itu dari kombinasi dan permutasi. Misal inputan 5 5
+                  
 •	Output: hasil dari kombinasi dan permutasi. Maka outputnya adalah kombinasi = 1 dan permutasi = 120
 
 
@@ -343,11 +375,13 @@ int faktor(int);
 int main()
 {
     int n;
-    scanf("%d",&n); //input angka faktorial printf("%d\n",faktor(n)); //print hasil fungsi faktorial
+    scanf("%d",&n); //input angka faktorial 
+    printf("%d\n",faktor(n)); //print hasil fungsi faktorial
 }
 int faktor(int a)
 { //fungsi rekursif faktorial
-    if(a==1) return 1; //jika angka=1, langsung print 1 if(a%2==0)
+    if(a==1) return 1; //jika angka=1, langsung print 1 
+    if(a%2==0)
     if(a % 2 == 0)
     {
         a=(a/2)*faktor(a-1); //bila angka genap maka dikali fungsi faktor
@@ -359,9 +393,15 @@ int faktor(int a)
 }
 
 •	Penjelasan : 
-a.	Pada dasarnya program ini adalah program yang menghitung angka factorial, namun dengan kondisi yg lebih spesifik dan menggunakan reskursi.
-b.	Prinsipnya adalah ketika factor yang dihitung dari sebuah inputan merupakan bilangan genap, maka sebelum dapat dilanjutkan perhitungan harus dibagi oleh 2 terlebih dahulu baru dapat dihitung layaknya factorial biasa.
-•	Input : Pengguna diminta untuk menginputkan angka test case yg nantinya dihitung factorial reskursif seperti di https://tlx.toki.id/courses/basic/chapters/12/problems/B Misal inputan nya adalah 5!
+a.	Pada dasarnya program ini adalah program yang menghitung angka factorial, 
+    namun dengan kondisi yg lebih spesifik dan menggunakan reskursi.
+b.	Prinsipnya adalah ketika factor yang dihitung dari sebuah inputan merupakan bilangan genap, 
+    maka sebelum dapat dilanjutkan perhitungan harus dibagi oleh 2 terlebih dahulu baru dapat dihitung layaknya 
+    factorial biasa.
+                  
+•	Input : Pengguna diminta untuk menginputkan angka test case yg nantinya dihitung factorial reskursif seperti di 
+    https://tlx.toki.id/courses/basic/chapters/12/problems/B Misal inputan nya adalah 5!
+    
 •	Output: Maka ouput hasil hitung factorial reskursif ini bukanlah “120” Melainkan adalah  30
 
 
@@ -405,9 +445,13 @@ int main ()
 •	Penjelasan : (https://www.youtube.com/watch?v=f_v388iq048) 
 a.	Program ini bertujuan untuk melakukan invers pada matriks inputan user, dengan catatan ordo yang sama. Missal 3*3.
 b.	Kemudian melakukan perulangan for loop pertama matriks untuk baris dan kolom dari matriks asli inputan user.
-c.	Selanjutnya distore ke mabok[i][j] (array 2d) dan masuk kembali ke perulangan untuk melakukan transpose (pembalikan dari baris mjd kolom dengan searah clockwise).
+c.	Selanjutnya distore ke mabok[i][j] (array 2d) dan masuk kembali ke perulangan untuk melakukan
+    transpose (pembalikan dari baris mjd kolom dengan searah clockwise).
 d.	Setelah selesai maka ditampilkan ke layar.
-•	Input : Meminta inputan user untuk ordo matriks dan setiap per baris pada matriks yang akan di transpose (pertukaran antara baris dan kolom searah clockwise) nantinya.
+                  
+•	Input : Meminta inputan user untuk ordo matriks dan setiap per baris pada matriks yang akan 
+    di transpose (pertukaran antara baris dan kolom searah clockwise) nantinya.
+                  
 •	Output: Hasil dari transposean matriks yaitu pertukaran baris dan kolom.
 
 
@@ -446,10 +490,14 @@ int main()
 
 
 •	Penjelasan :  (https://www.youtube.com/watch?v=yPNV-VU7_Y8)
-a.	Program ini dibuat untuk melakukan pembalikan urutan angka dari inputan user yang sesuai juga dengan keinginan user berapa banyak melakukan pembalikan.
-b.	Prinsipnya adalah semua urutan angka inputan user di modulo atau sisa bagi dengan 10 terlebih dahulu untuk mengetahui angka yang paling belakang.
+a.	Program ini dibuat untuk melakukan pembalikan urutan angka dari inputan user yang sesuai juga dengan 
+    keinginan user berapa banyak melakukan pembalikan.
+b.	Prinsipnya adalah semua urutan angka inputan user di modulo atau sisa bagi dengan 10 terlebih dahulu 
+    untuk mengetahui angka yang paling belakang.
 c.	Setelah mengetahui maka angka tsb satu persatu di bagi oleh 10 dimulai dri paling belakang.
-d.	Setelah terus berulang selama while loop N > 0, sampai pada 0>0 maka loop selesai dan dapat di tampilkan ke layar. 
+d.	Setelah terus berulang selama while loop N > 0, sampai pada 0>0 maka loop selesai dan dapat di tampilkan ke layar.
+                    
 •	Input : Test case uji, seberapa banyak ingin melakukan pembalikan angka atau berapa kali program diinginkan untuk berjalan.
+                   
 •	Output:  Berupa urutan angka yang berkebalikan dari inputan user.
 
