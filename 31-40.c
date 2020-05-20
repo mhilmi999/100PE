@@ -1,5 +1,7 @@
 31. Faktorisasi Prima
-Diberikan sebuah bilangn bulat positif N. Menentukan faktorisasi prima N dalam bentuk p1^a1 x p2^a2 x ... x pK^aK, dengan p adalah bilangan prima dan a adalah pangkatnya. Apabila pangkatnya 1,maka tidak perlu dituliskan beserta tanda pangkatnya.Bilangan primma harus terurut dari kecil ke besar.
+Diberikan sebuah bilangn bulat positif N. Menentukan faktorisasi prima N dalam bentuk p1^a1 x p2^a2 x ... x pK^aK, 
+dengan p adalah bilangan prima dan a adalah pangkatnya. Apabila pangkatnya 1,maka tidak perlu dituliskan beserta tanda 
+pangkatnya.Bilangan primma harus terurut dari kecil ke besar.
 
 Input Output
 56     2^3 x 7
@@ -117,13 +119,16 @@ int main(){
 
 
 34. Penjumlahan Pecahan
-diberikan dua buah pecahan dalam bentuk A/B dan C/D. Hitunglah A/B + C/D, lalu cetak hasilnya dalam bentuk yang paling sederhana. Bentuk paling sederhana dari suatu pecahan adalah ketika FPB dari pembilang dan penyebutnya adalah 1.A, B, C, dan D adalah bilangan bulat positif
+diberikan dua buah pecahan dalam bentuk A/B dan C/D. Hitunglah A/B + C/D, lalu cetak hasilnya dalam bentuk yang 
+paling sederhana. Bentuk paling sederhana dari suatu pecahan adalah ketika FPB dari pembilang dan penyebutnya adalah 
+1.A, B, C, dan D adalah bilangan bulat positif
 
 Format Masukan
 Baris pertama berisi dua buah bilangan bulat A dan B. Baris kedua berisi dua buah bilangan bulat C dan D.
 
 Format Keluaran
-Sebuah baris berisi dua buah bilangan bulat, yaitu E dan F, di mana E/F = A/B + C/D dan E/F adalah bentuk yang paling sederhana.
+Sebuah baris berisi dua buah bilangan bulat, yaitu E dan F, di mana E/F = A/B + C/D dan E/F adalah bentuk yang paling 
+sederhana.
 
 Input Output
 2 3   22  15
@@ -224,7 +229,8 @@ Format Masukan
 Baris pertama berisi sebuah bilangan bulat B. Baris kedua berisi sebuah bilangan bulat K.
 
 Format Keluaran
-Beberapa baris dengan satu bilangan bulat setiap barisnya yang merupakan berat dari masing-masing pemberat yang digunakan, terurut dari besar ke kecil.
+Beberapa baris dengan satu bilangan bulat setiap barisnya yang merupakan berat dari masing-masing pemberat yang digunakan, 
+terurut dari besar ke kecil.
 
 Input         Output
   1             4
