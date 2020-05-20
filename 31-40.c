@@ -6,10 +6,13 @@ Input Output
 
 Source code:
 #include<stdio.h> #include<string.h>
-//author : Evelyn Tjitrodjojo int arr[1000001];
+//author : Evelyn Tjitrodjojo 
+int arr[1000001];
 int prime[77778];
 int cntprime;
-void sieve(){ //fungsi sieve dlm mencari bil prima memset(arr,0,sizeof (arr)); //memberi nilai 0 pada isi array int i,j;
+void sieve(){ //fungsi sieve dlm mencari bil prima 
+        memset(arr,0,sizeof (arr)); //memberi nilai 0 pada isi array 
+        int i,j;
 cntprime=0;
 arr[1]=1;
 for(i=2;i<1000001;i++){
@@ -176,7 +179,8 @@ int main(){
 
 35. Faktorial
 N!, yaitu N faktorial, didefinisikan sebagai N x (N-1) x (N-2) x ... x 1.
-Menghitunglah jumlah 0 berurutan yang mengakhiri N!. Misalnya, 10! = 3.628.800, maka jumlah 0 berurutan adalah 2. 8! = 40.320, maka jumlah 0 berurutan adalah 1 (nol di tengah tidak dihitung).
+Menghitunglah jumlah 0 berurutan yang mengakhiri N!. Misalnya, 10! = 3.628.800, 
+maka jumlah 0 berurutan adalah 2. 8! = 40.320, maka jumlah 0 berurutan adalah 1 (nol di tengah tidak dihitung).
 
 Format Masukan
 Baris pertama berisi sebuah bilangan bulat N.
@@ -208,8 +212,13 @@ int main(){
 
 
 36. Pemberat
-Terdapat masalah ketidakseimbangan jungkat jungkit yang dimana kucing memiliki berat badan yang besar dan bebek memiliki berat badan yang kecil supaya seimbang kita menggunakan beberapa pemberat di sisi bebek berada, sedemikian sehingga berat satu sisi dan lainnya kini sama. Sayangnya kita tidak memiliki pemberat dalam setiap ukurankita hanya memiliki pemberat dengan ukuran 2^K dengan 0 ≤ K ≤ 60. Terlebih lagi, kita hanya memiliki satu buah pemberat untuk setiap ukuran tersebut.
-Saat ini berat bebek yang bermain adalah B, sedangkan berat kucing yang bermain adalah K (1 ≤ B < K ≤ 2^61). Bantulah Pak Dengklek untuk menentukan pemberat mana saja yang harus ia gunakan.
+Terdapat masalah ketidakseimbangan jungkat jungkit yang dimana kucing memiliki berat badan yang besar dan 
+bebek memiliki berat badan yang kecil supaya seimbang kita menggunakan beberapa pemberat di sisi bebek berada, 
+sedemikian sehingga berat satu sisi dan lainnya kini sama. Sayangnya kita tidak memiliki pemberat dalam setiap 
+ukurankita hanya memiliki pemberat dengan ukuran 2^K dengan 0 ≤ K ≤ 60. Terlebih lagi, kita hanya memiliki satu buah 
+pemberat untuk setiap ukuran tersebut.
+Saat ini berat bebek yang bermain adalah B, sedangkan berat kucing yang bermain adalah K (1 ≤ B < K ≤ 2^61). 
+Bantulah Pak Dengklek untuk menentukan pemberat mana saja yang harus ia gunakan.
 
 Format Masukan
 Baris pertama berisi sebuah bilangan bulat B. Baris kedua berisi sebuah bilangan bulat K.
@@ -289,14 +298,23 @@ return 0;
 
 
 38.Magic Square
-Magic Square adalah persegi yang terdiri atas N x N petak, masing-masing petak berisi sebuah bilangan bulat antara 1 hingga N2 tanpa ada 2 petak yang berisi angka yang sama, di mana jumlah bilangan yang ada pada setiap baris = jumlah bilangan yang ada pada setiap kolom = jumlah bilangan yang terletak pada setiap diagonal utama. Yang dimaksud dengan diagonal utama di sini adalah diagonal yang membentang dari pojok kiri atas hingga ke pojok kanan bawah, dan diagonal yang membentang dari pojok kanan atas hingga pojok kiri bawah persegi. Tentu saja sebuah Magic Square berukuran setidaknya 3 x 3 memiliki tepat dua buah diagonal utama.
-Pak Dengklek memberikan Anda beberapa pertanyaan yang masing-masing diwakilkan dengan sebuah bilangan bulat N (3 ≤ N ≤ 1.000.000). Untuk setiap bilangan bulat N yang ditanyakan, tentukan jumlah bilangan pada baris pertama magic square berukuran N x N.
+Magic Square adalah persegi yang terdiri atas N x N petak, masing-masing petak berisi sebuah bilangan bulat antara 
+1 hingga N2 tanpa ada 2 petak yang berisi angka yang sama, di mana jumlah bilangan yang ada pada setiap baris = 
+jumlah bilangan yang ada pada setiap kolom = jumlah bilangan yang terletak pada setiap diagonal utama. 
+Yang dimaksud dengan diagonal utama di sini adalah diagonal yang membentang dari pojok kiri atas hingga ke pojok kanan bawah,
+dan diagonal yang membentang dari pojok kanan atas hingga pojok kiri bawah persegi. Tentu saja sebuah Magic Square berukuran 
+setidaknya 3 x 3 memiliki tepat dua buah diagonal utama.
+Pak Dengklek memberikan Anda beberapa pertanyaan yang masing-masing diwakilkan dengan sebuah 
+bilangan bulat N (3 ≤ N ≤ 1.000.000). Untuk setiap bilangan bulat N yang ditanyakan, tentukan jumlah bilangan
+pada baris pertama magic square berukuran N x N.
 
 Format Masukan
-Baris pertama berisi bilangan bulat T (1 ≤ T ≤ 100.000) yaitu banyaknya pertanyaan Pak Dengklek. Sebanyak T baris berikutnya masing-masing berisi sebuah bilangan bulat N, yang mewakili pertanyaan Pak Dengklek.
+Baris pertama berisi bilangan bulat T (1 ≤ T ≤ 100.000) yaitu banyaknya pertanyaan Pak Dengklek. 
+Sebanyak T baris berikutnya masing-masing berisi sebuah bilangan bulat N, yang mewakili pertanyaan Pak Dengklek.
 
 Format Keluaran
-Sebanyak T baris, masing-masing berisi sebuah bilangan bulat yang merupakan nilai K untuk setiap N yang ditanyakan, sesuai dengan urutan pada masukan.
+Sebanyak T baris, masing-masing berisi sebuah bilangan bulat yang merupakan nilai K untuk setiap N yang ditanyakan, 
+sesuai dengan urutan pada masukan.
 
 Input     Output
   2         15
@@ -319,11 +337,14 @@ int main(){
 
 
 39. Kelipatan 4 atau 7
-diminta Anda untuk menghitung jumlah semua bilangan asli yang tidak lebih besar dari N (1 ≤ N ≤ 1.001.000) yang merupakan kelipatan 4 atau 7.
-Misalnya, bilangan asli yang tidak lebih besar dari 10 yang merupakan kelipatan 4 atau 7 adalah 4, 7, dan 8. Jumlah dari keempat bilangan ini adalah 19.
+diminta Anda untuk menghitung jumlah semua bilangan asli yang tidak lebih besar dari N (1 ≤ N ≤ 1.001.000) yang merupakan
+kelipatan 4 atau 7.
+Misalnya, bilangan asli yang tidak lebih besar dari 10 yang merupakan kelipatan 4 atau 7 adalah 4, 7, dan 8. 
+Jumlah dari keempat bilangan ini adalah 19.
 
 Format Masukan
-Baris pertama berisi sebuah bilangan bulat T (1 ≤ T ≤ 100.000) yaitu jumlah pertanyaan. T baris berikutnya masing-masing berisi sebuah bilangan bulat N.
+Baris pertama berisi sebuah bilangan bulat T (1 ≤ T ≤ 100.000) yaitu jumlah pertanyaan. T baris berikutnya masing-masing
+berisi sebuah bilangan bulat N.
 
 Format Keluaran
 T buah baris, masing-masing berisi sebuah bilangan bulat yaitu jumlah yang dimaksud.
@@ -360,14 +381,21 @@ int main(){
 
 40. Memasang lantai
 Penjelasan:
-Pak Dengklek membuat kandang baru untuk bebek-bebeknya. Kandang baru ini luasnya adalah 3 × N meter. Untuk menutupi seluruh permukaan lantai kandang baru tersebut, Pak Dengklek sudah membeli sejumlah papan dengan ukuran 1 × 3 meter. Sayangnya Pak Dengklek tidak memiliki gergaji, sehingga ia tidak dapat memotong papan-papannya seenak hati. Kini ia memikirkan bagaimana cara ia dapat menutupi semua permukaan lantai dengan papan-papan tersebut tanpa memotong satu papan pun dan tanpa ada dua atau lebih papan bertumpuk.
-Dasar Pak Dengklek, ia tidak puas hanya dengan mengetahui salah satu cara untuk menutup semua permukaan lantai, kini ia memikirkan berapa banyak kemungkinan peletakan papan-papan agar semua permukaan lantai tertutupi.
+Pak Dengklek membuat kandang baru untuk bebek-bebeknya. Kandang baru ini luasnya adalah 3 × N meter. 
+Untuk menutupi seluruh permukaan lantai kandang baru tersebut, Pak Dengklek sudah membeli sejumlah papan dengan 
+ukuran 1 × 3 meter. Sayangnya Pak Dengklek tidak memiliki gergaji, sehingga ia tidak dapat memotong papan-papannya seenak hati.
+Kini ia memikirkan bagaimana cara ia dapat menutupi semua permukaan lantai dengan papan-papan tersebut tanpa memotong satu 
+papan pun dan tanpa ada dua atau lebih papan bertumpuk.
+Dasar Pak Dengklek, ia tidak puas hanya dengan mengetahui salah satu cara untuk menutup semua permukaan lantai, 
+kini ia memikirkan berapa banyak kemungkinan peletakan papan-papan agar semua permukaan lantai tertutupi.
 
 Format Masukan
 Sebuah bilangan bulat N (1 ≤ N ≤ 1000) yang berarti luas kandang baru adalah 3 × N meter.
 
 Format Keluaran
-Sebuah bilangan bulat yang merupakan banyaknya kemungkinan peletakan papan-papan untuk menutupi lantai. Jika bilangan ini lebih besar dari 999999 Anda cukup mencetak sisa bagi bilangan tersebut dengan 1000000 (bila bilangan tersebut adalah X dan X>999999, Anda cukup mencetak X MOD 1000000).
+Sebuah bilangan bulat yang merupakan banyaknya kemungkinan peletakan papan-papan untuk menutupi lantai. 
+Jika bilangan ini lebih besar dari 999999 Anda cukup mencetak sisa bagi bilangan tersebut dengan 
+1000000 (bila bilangan tersebut adalah X dan X>999999, Anda cukup mencetak X MOD 1000000).
 
 Input       Output
   4           3
