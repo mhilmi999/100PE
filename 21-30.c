@@ -79,7 +79,8 @@ if (min>a) min=a; //cari nilai min
 }
 rt=rt+a1; //jumlah dgn angka pertama
 rt=rt/n; //jum dibagi dgn banyak angka sebagai rata” 
-printf("%.2lf %.2lf %.2lf\n",min,max,rt); //print min,max,rata” return 0;
+printf("%.2lf %.2lf %.2lf\n",min,max,rt); //print min,max,rata” 
+  return 0;
 }
 
 
@@ -98,17 +99,20 @@ int main(){
 long long arr[600001];
 long long a,n=0,m,modus=0,x,y,b;
 long long i=0;
-while (scanf("%lld",&arr[i])!=EOF){ //input smpai EOF i++;
+while (scanf("%lld",&arr[i])!=EOF){ //input smpai EOF 
+i++;
  }
 long long max=0,min=arr[0];
 for(x=i-1;x>=0;x--){
-if(arr[x]>max) max=arr[x]; //cari nilai max dari semua angka }
+if(arr[x]>max) max=arr[x]; //cari nilai max dari semua angka
+}
 for(y=i-1;y>=0;y--){
           if(arr[y]<min) //cari nilai min
     min=arr[y];
 }
 
-printf("%lld\n",max-min); //print hasil pengurangan nilai max dan min return 0;
+printf("%lld\n",max-min); //print hasil pengurangan nilai max dan min 
+return 0;
 }
 
 
@@ -127,16 +131,19 @@ int main (){
 long long total=0;
 long long arr;
 long long x,y,a,max,jmlh,lantai;
-scanf("%lld %lld", &x, &y); //input jum tinggi dan jum kucing lantai=0;
+scanf("%lld %lld", &x, &y); //input jum tinggi dan jum kucing 
+lantai=0;
 jmlh=0;
 while(x>y){ //diulang selama jum tinggi lbh besar dr jum kucing
   max=0;
   for(a=0;a<y;a++) {
 
 scanf("%lld", &arr); //input tinggi
-if(arr>max) max=arr; //cari tinggi max }
+if(arr>max) max=arr; //cari tinggi max 
+}
 lantai++; //tambah lantai
-x=x-y; //kurangi jum tinggi dgn jum kucing jmlh=jmlh+max;
+x=x-y; //kurangi jum tinggi dgn jum kucing 
+jmlh=jmlh+max;
 }
 max=0;
 for(a=0;a<x;a++){
@@ -164,12 +171,15 @@ Nilai e
 int main(){
 int a,b,e=0,c,d,g;
 int i,j;
-scanf("%d %d",&a,&b); //input dua angka g=b;
+scanf("%d %d",&a,&b); //input dua angka 
+g=b;
 while(a>=1){
-c=a%10; //di mod utk angka terbelakang a=a/10; //lalu dibagi 10
+c=a%10; //di mod utk angka terbelakang 
+a=a/10; //lalu dibagi 10
 b=g;
 while(b>=1){
-d=b%10; //dimod utk mengetahui angka terbelakang b=b/10; //dibagi 10
+d=b%10; //dimod utk mengetahui angka terbelakang 
+b=b/10; //dibagi 10
 e=e+(c*d); //dikalikan dgn angka blkg pertama
 } }
 printf("%d\n",e); //print jumlah
@@ -189,17 +199,22 @@ Output : total harga parkir dari semua truk yg ada #include <stdio.h>
 //author : Evelyn Tjitrodjojo
 int main(){
 int arr[100];
-int a,n=0,m,jum=0,x,y,b,la,li,lu; memset(arr,0,sizeof(arr)); //semua isi nilai array di 0 kan scanf("%d %d %d",&la,&li,&lu); //harga parkir
+int a,n=0,m,jum=0,x,y,b,la,li,lu; memset(arr,0,sizeof(arr)); //semua isi nilai array di 0 kan 
+scanf("%d %d %d",&la,&li,&lu); //harga parkir
 int jMax=0;
 for(x=0;x<3;x++){
-scanf("%d %d",&a,&b); //waktu truk parkit if(b>=jMax){ //cari yang maks
+scanf("%d %d",&a,&b); //waktu truk parkit 
+if(b>=jMax){ //cari yang maks
 jMax=b; }
-for(y=a;y<=b-1;y++){ //penanda truk parkir arr[y]++;
+for(y=a;y<=b-1;y++){ //penanda truk parkir 
+arr[y]++;
 } }
 for(x=1;x<=jMax-1;x++){
 if(arr[x]==1) jum=jum+la;
-//jika satu truk saja yg parkir, ditambah harga pertama if(arr[x]==2) jum=jum+2*li;
-//jika dua truk yg parkir, ditambah dgn dua kali harga kedua if(arr[x]==3) jum=jum+3*lu;
+//jika satu truk saja yg parkir, ditambah harga pertama 
+if(arr[x]==2) jum=jum+2*li;
+//jika dua truk yg parkir, ditambah dgn dua kali harga kedua 
+if(arr[x]==3) jum=jum+3*lu;
 //jika tiga truk yg parkir, ditambah dgn dua kali harga ketiga
 
 }
@@ -229,9 +244,11 @@ void isiarray(long long n,long long gelas[]){ //fungsi utk isi array gelas
 int main(){
 long long gelas[100000]; long long bny,tkr,a,b,c,d,e; long long temp;
 
-scanf("%d %d",&bny,&tkr); //input posisi gelas isiarray(bny,gelas);
+scanf("%d %d",&bny,&tkr); //input posisi gelas 
+isiarray(bny,gelas);
 for(a=0;a<tkr;a++){
-scanf("%d %d",&b,&c); //input letak gelas temp=gelas[b]; //swap
+scanf("%d %d",&b,&c); //input letak gelas 
+  temp=gelas[b]; //swap
   gelas[b]=gelas[c];
   gelas[c]=temp;
  }
@@ -251,7 +268,8 @@ Pertama inputkan testcase (banyak angka) lalu inputkan angka-angka yang akan dic
 #include <stdio.h>
 /*Judul: Median
       Author : Evelyn Tjitrodjojo*/
-void Sort(float Data[],int L, int R){ //fungsi sort int i=L, j=R;
+void Sort(float Data[],int L, int R){ //fungsi sort 
+  int i=L, j=R;
 float temp, x=Data[(L+R)/2];
 
  while (i <= j){
@@ -269,12 +287,15 @@ j--; }
 }
 int main(){
 int i, count;
-float median,number[2000000]; scanf("%d", &count); //input testcase for (i = 0; i < count; ++i)
-scanf("%f", &number[i]); //input angka Sort(number, 0,count-1); //disort
+float median,number[2000000]; scanf("%d", &count); //input testcase 
+  for (i = 0; i < count; ++i)
+scanf("%f", &number[i]); //input angka 
+  Sort(number, 0,count-1); //disort
 if(count%2==0)
 //jika genap, angka ditengah dgn angka berikutnya ditmbh bagi dua
 median=(number[count/2]+number[count/2-1])/2;
-else median=number[count/2]; //jika ganjil, angka yg ditengah = median printf("%.2f\n", median);
+else median=number[count/2]; //jika ganjil, angka yg ditengah = median 
+  printf("%.2f\n", median);
 }
 
 
@@ -294,7 +315,8 @@ sortingnya secara increment (meningkat) sehingga jika dari pada ke-i+1 maka akan
 kartu sudah terurut pada akhir program, program
       Author : Evelyn Tjitrodjojo*/
 long long n,c,i,j;
-void bubblesort(int data[],int n){ //fungsi bubble sort int temp,i,j;
+void bubblesort(int data[],int n){ //fungsi bubble sort 
+  int temp,i,j;
  for(i=0;i<n;i++){
   for(j=0;j<n-1;j++){
    if(data[j]>data[j+1]){
@@ -310,9 +332,11 @@ int main(){
  int data[n];
  for(i=0;i<n;i++){
 
-scanf("%d",&data[i]); //input data angka }
+scanf("%d",&data[i]); //input data angka 
+ }
 bubblesort(data,n); //disort
-printf("%d\n",c); //hasil penukaran terkecil dari data }
+printf("%d\n",c); //hasil penukaran terkecil dari data 
+}
 
 
 
@@ -330,8 +354,10 @@ void swap(long long *xp, long long *yp) { //fungsi swap
 }
 void selectionsort(long long n,long long arr[]) { //fungsi selection sort
 long long i, j, min_idx;
-// One by one move boundary of unsorted subarray for (i = 0; i < n-1; i++) {
-// Find the minimum element in unsorted array min_idx = i;
+// One by one move boundary of unsorted subarray 
+  for (i = 0; i < n-1; i++) {
+// Find the minimum element in unsorted array 
+    min_idx = i;
 for (j = i+1; j < n; j++)
    if (arr[j] < arr[min_idx])
     min_idx = j;
@@ -342,7 +368,10 @@ if(i!=min_idx)swap(&arr[min_idx], &arr[i]); }
 int main(){
 long long n,i;
 c=0;
-scanf("%lld",&n); //input test case long long data[1001]; for(i=0;i<n;i++){
-scanf("%lld",&data[i]); //input data }
+scanf("%lld",&n); //input test case long long data[1001]; 
+  for(i=0;i<n;i++){
+scanf("%lld",&data[i]); //input data 
+  }
 selectionsort(n,data); //disort menggunakan fungsi
-printf("%lld\n",c); //jumlah total swap data }
+printf("%lld\n",c); //jumlah total swap data 
+}
