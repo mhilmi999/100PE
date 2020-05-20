@@ -1,17 +1,21 @@
 41. Pecahan Uang
 Source Code:
 #include<stdio.h>
-//author : Evelyn Tjitrodjojo int main(){
-int k,t,i;
-int c[10]={1,2,5,10,20,50,100,200,500,1000};// merupakan daftar pecahan uang yang ada
-scanf("%d",&k);
-for(i=9;i>=0;i--){
-                 if(k>=c[i]){
-t=k/c[i];
-k=k-c[i]*t;
-printf("%d %d\n",c[i],t);
-} }
-return 0;
+int main()
+{
+    int k,t,i;
+    int c[10]={1,2,5,10,20,50,100,200,500,1000};// merupakan daftar pecahan uang yang ada
+    scanf("%d",&k);
+    for(i=9;i>=0;i--)
+    {
+        if(k>=c[i])
+        {
+            t=k/c[i];
+            k=k-c[i]*t;
+            printf("%d %d\n",c[i],t);
+        }
+    }
+    return 0;
 }
 
 Penjelasan:
