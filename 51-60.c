@@ -40,8 +40,10 @@ int main(){
  int a,b,c;
  scanf("%d",&a); //input test case
  while(a--){
-scanf("%d",&b); //input angka printf("%d\n",(b*b*2)+((b-2)*b*2)+((b-2)*(b-2)*2)); //print jum kotak atas dan bwh + samping-atas-bwh + tengah
-} }
+scanf("%d",&b); //input angka 
+printf("%d\n",(b*b*2)+((b-2)*b*2)+((b-2)*(b-2)*2)); //print jum kotak atas dan bwh + samping-atas-bwh + tengah
+} 
+}
 
 
 
@@ -50,7 +52,8 @@ scanf("%d",&b); //input angka printf("%d\n",(b*b*2)+((b-2)*b*2)+((b-2)*(b-2)*2))
 Penjelasan:
 input angka pertama buat testcase
 di tiap case input, berapa program yang ingin diinstal (sebut saja n program) masukkan input sebanyak n program
-jumlah semua bobot dari program yang diinstal. Semisal kurang dari 16k, berarti keluar 16GB. Kurang dari 32k, berarti keluar 32GB. Kurang dari 64k, berarti keluar 64GB. Kurang dari 128k, berarti keluar 128GB.
+jumlah semua bobot dari program yang diinstal. Semisal kurang dari 16k, berarti keluar 16GB. Kurang dari 32k, 
+berarti keluar 32GB. Kurang dari 64k, berarti keluar 64GB. Kurang dari 128k, berarti keluar 128GB.
 #include<stdio.h>
 //author : Evelyn Tjitrodjojo
 int main(){
@@ -66,8 +69,12 @@ while(b--){ //diulang sesuai input brp harga
  jum=jum+c; //hasil penjumlahan harga test case tsb
 }
 if(jum<=16000) printf("Case #%d: 16GB\n",i);
-//jika kurang dr sama dgn 16 GB maka print 16GB else if(jum<=32000) printf("Case #%d: 32GB\n",i); //jika kurang dr sama dgn 32 GB maka print 32GB else if(jum<=64000) printf("Case #%d: 64GB\n",i); //jika kurang dr sama dgn 64 GB maka print 64GB else if(jum<=128000) printf("Case #%d: 128GB\n",i); //jika kurang dr sama dgn 128 GB maka print 128GB
-} }
+//jika kurang dr sama dgn 16 GB maka print 16GB 
+  else if(jum<=32000) printf("Case #%d: 32GB\n",i); //jika kurang dr sama dgn 32 GB maka print 32GB 
+  else if(jum<=64000) printf("Case #%d: 64GB\n",i); //jika kurang dr sama dgn 64 GB maka print 64GB 
+  else if(jum<=128000) printf("Case #%d: 128GB\n",i); //jika kurang dr sama dgn 128 GB maka print 128GB
+} 
+}
 
 
 
@@ -142,7 +149,9 @@ int a,b,c,i,j,k,l,m,n;
 
 55.ROKET-1
 Penjelasan:
-Pada soal ini, kalian belajar menggunakan Big Mod dimana jika jawaban terlalu besar, kalian diminta untuk mencetak jawaban kalian dengan dimodulo sesuatu. Solusinya adalah dengan mengimplementasi teori yang sudah dijelaskan di soal.
+Pada soal ini, kalian belajar menggunakan Big Mod dimana jika jawaban terlalu besar, 
+kalian diminta untuk mencetak jawaban kalian dengan dimodulo sesuatu. Solusinya adalah dengan mengimplementasi teori 
+yang sudah dijelaskan di soal.
 sudah jelas di source code, ada comment nya
 #include<stdio.h>
 //author : Evelyn Tjitrodjojo
@@ -158,7 +167,8 @@ d=10%c; //10 mod angka
 has=(has*d)%c;
 //hasilnya dikalikan hasil 10 mod kemudian di mod kembali
 }
-printf("Kasus #%lld: %lld\n",i,has%c); //print hasil di mod c }
+printf("Kasus #%lld: %lld\n",i,has%c); //print hasil di mod c 
+}
 }
 
 
@@ -175,8 +185,12 @@ int main(){
  int i,j;
  scanf("%d",&a); //input test case
  for(i=1;i<=a;i++){
-scanf("%d %d %d",&x1,&y1,&d); //input titik pusat dan jari” scanf("%d %d",&x2,&y2); //input letak titik m=pow((x2-x1),2); //kuadrat dari letak titik dgn titik pusat n=pow((y2-y1),2);
-o=sqrt(m+n); //akar kuadrat dari penjumlahan kedua titik kuadrat if(o>d)printf("Kasus #%d: LUAR\n",i);
+scanf("%d %d %d",&x1,&y1,&d); //input titik pusat dan jari” 
+scanf("%d %d",&x2,&y2); //input letak titik 
+m=pow((x2-x1),2); //kuadrat dari letak titik dgn titik pusat 
+n=pow((y2-y1),2);
+o=sqrt(m+n); //akar kuadrat dari penjumlahan kedua titik kuadrat 
+if(o>d)printf("Kasus #%d: LUAR\n",i);
 //jika lbh dr jari” maka letak titik di luar
 else if(o<d)printf("Kasus #%d: DALAM\n",i);
 //jika kurang dr jari” maka letak titik di dalam
@@ -190,8 +204,11 @@ else if(o==d)printf("Kasus #%d: GARIS\n",i);
 
 57. Squared Points
 Penjelasan:
-Diberikan N buah titik pada bidang Kartesian (1 ≤ N ≤ 1,000; -1,000 ≤ xi, yi ≤ 1,000), tentukan luas persegi terkecil yang melingkupi semua titik yang diberikan.
-Cari titik terkiri dan titik terkanan, hitung selisih jarak x mereka (dx). Cari titik teratas dan titik terbawah, hitung selisih jarak y mereka (dy). Maka sisi persegi terkecil yang diperlukan adalah s = max(dx, dy). Output s2.
+Diberikan N buah titik pada bidang Kartesian (1 ≤ N ≤ 1,000; -1,000 ≤ xi, yi ≤ 1,000), 
+tentukan luas persegi terkecil yang melingkupi semua titik yang diberikan.
+Cari titik terkiri dan titik terkanan, hitung selisih jarak x mereka (dx). 
+Cari titik teratas dan titik terbawah, hitung selisih jarak y mereka (dy). 
+Maka sisi persegi terkecil yang diperlukan adalah s = max(dx, dy). Output s2.
 inti dari soal nya kek gituu guys...
 
 kurang jelas ? oke
@@ -209,8 +226,13 @@ int main(){
  int max=-1001,min=1001,max2=-1001,min2=1001;
  scanf("%d",&a); //input testcase
  for(j=1;j<=a;j++){
-max=-1001,min=1001,max2=-1001,min2=1001; scanf("%d",&b); //input banyak data dalam array for(i=0;i<b;i++){
-scanf("%d %d",&x[i],&y[i]); //input data array if(x[i]>max) max=x[i]; //mencari nilai x max if(x[i]<min) min=x[i]; //mencari nilai x min if(y[i]>max2) max2=y[i]; //mencari nilai y max if(y[i]<min2) min2=y[i]; //mencari nilai y min
+max=-1001,min=1001,max2=-1001,min2=1001; scanf("%d",&b); //input banyak data dalam array 
+  for(i=0;i<b;i++){
+scanf("%d %d",&x[i],&y[i]); //input data array 
+   if(x[i]>max) max=x[i]; //mencari nilai x max 
+   if(x[i]<min) min=x[i]; //mencari nilai x min 
+   if(y[i]>max2) max2=y[i]; //mencari nilai y max 
+   if(y[i]<min2) min2=y[i]; //mencari nilai y min
   }
   if((max-min)>(max2-min2))
   //jika selisih max dan min array x lbh besar
@@ -262,10 +284,13 @@ for(i=0;i<a;i++){
   scanf("%lld",&x[i]); //input data array
   sum=sum+x[i]; //jumlah data
 }
-sort(x,0,a-1); //sort data d=sum/a; //mencari rata-rata data j=0;
+sort(x,0,a-1); //sort data 
+d=sum/a; //mencari rata-rata data 
+j=0;
 while(x[j]<=d && j<a){
 j++;
-//jika data kurang dari rata-rata dan tidak melebihi jum array }
+//jika data kurang dari rata-rata dan tidak melebihi jum array 
+}
 printf("%lld\n",x[j-1]); //print array ke j-1
 }
 
@@ -278,7 +303,8 @@ input testcase
 input string
 cek huruf pertama, jika huruf kecil kasih flag, jika tidak gausah
 for looping dari 1 to panjang string nya
-jika flag 0 dan array x huruf kecil, ditmbh 32 menjadi huruf besar. jika flag 1 dan array x huruf besar, dikurang 32 menjadi huruf kecil
+jika flag 0 dan array x huruf kecil, ditmbh 32 menjadi huruf besar. 
+jika flag 1 dan array x huruf besar, dikurang 32 menjadi huruf kecil
 setiap pindah huruf, flag diubah cetak string yang telah diubah
 #include<stdio.h>
 #include<string.h>
@@ -294,7 +320,8 @@ while(a--){
  if(x[0]<97){ //jika huruf kecil di string ke 0
   flag=1; //beri flag
  }
-else flag=0; //jika huruf besar flag=0 for(i=1;i<strlen(x);lenght++){ //perulangan - panjang string x
+else flag=0; //jika huruf besar flag=0 
+for(i=1;i<strlen(x);lenght++){ //perulangan - panjang string x
   for(j=0;j<lenght && i< strlen(x);j++,i++){
 if(flag==1 && x[i]<97) x[i] = x[i]+32;
 //jika flag 0 dan array x huruf kecil, ditmbh 32 menjadi huruf besar
@@ -311,8 +338,11 @@ printf("%s\n",x); //print hasil string yg sdh diubah }
 
 60. Flood
 Penjelasan:
-KAYAKnya programnya ini ngecek apakah dari baris pertama dia itu bisa menuju ke baris terakhir. Jadi, jalan nya itu tanda titik, sedangkan # itu kayak pagernya. Kayake gitu
-Fungsi pertama itu, digunakan untuk backtracking. Backtracking adalah sebuah algoritma secara umum digunakan untuk menemukan semua (atau beberapa) solusi terhadap sebuah permasalahan komputasional. Biasanya fungsi ini digunakan untuk menelurusi sebuah maze
+KAYAKnya programnya ini ngecek apakah dari baris pertama dia itu bisa menuju ke baris terakhir. 
+Jadi, jalan nya itu tanda titik, sedangkan # itu kayak pagernya. Kayake gitu
+Fungsi pertama itu, digunakan untuk backtracking. Backtracking adalah sebuah algoritma secara umum 
+digunakan untuk menemukan semua (atau beberapa) solusi terhadap sebuah permasalahan komputasional. 
+Biasanya fungsi ini digunakan untuk menelurusi sebuah maze
 input test case
 input ukuran array of char 2 dimensi
 reset array y
@@ -320,48 +350,57 @@ masukkan isi dari array of char 2 dimensi buat for looping sebesar array 2 dimen
 
 jika ada ".", lakukan backtracking
 semisal bisa menemukan jalan ujung, cetak IYA. Kalau gabisa ya, TIDAK
-#include<stdio.h>
-#include<string.h>
-//author : Evelyn Tjitrodjojo
-int y[1000][1000];
-int benar;
-void path(int l,int m,int b,int c,char x[][1000]){ //fungsi backtracking
-y[l][m]=1;
-if(l==0||l==b-1||m==0||m==c-1){ //batas backtracking
-benar=0;
-return; }
-if((x[l][m+1]=='#'||y[l][m+1]==1)&&(x[l-1][m]=='#'||y[l-1][m]==1) &&(x[l][m-1]=='#'||y[l][m-1]==1)&&(x[l+1][m]=='#'||y[l+1][m]==1)){ benar=1; //batas backtracking
-return; }
-if (m+1<c&&x[l][m+1]!='#'&&y[l][m+1]==0) path(l,m+1,b,c,x); if (l-1<b&&x[l-1][m]!='#'&&y[l-1][m]==0) path(l-1,m,b,c,x); if (m-1<c&&x[l][m-1]!='#'&&y[l][m-1]==0) path(l,m-1,b,c,x); if (l+1<b&&x[l+1][m]!='#'&&y[l+1][m]==0) path(l+1,m,b,c,x);
- } //rekursif backtracking
-int main(){
- int a,b,c,l,m;
- int i,j,k;
- char x[1000][1000];
- scanf("%d",&a); //input testcase
- for(i=1;i<=a;i++){
-  scanf("%d %d",&b,&c); //input ordo
-  memset(y,0,sizeof(y)); //set semua nilai array y = 0
-  benar=0;
-  getchar(); //utk mengambil enter
-  for(j=0;j<b;j++){
-
-   for(k=0;k<c;k++){
-    scanf("%c",&x[j][k]); //input matriks char
-   }
-  getchar();
-  }
-  for(j=0;j<b;j++){
-   for(k=0;k<c;k++){
-    if(x[j][k]=='.'&&y[j][k]==0){ //jika terdpt ‘.’
-     l=j; //mencatat lokasi
-     m=k;
-     path(l,m,b,c,x); //backtracking
-     if(benar==1)break;
-     //jika sdh benar lgs break
-    }
-   }   if(benar==1)break;
-  }
-if(benar==1)printf("Case #%d: YA\n",i); //jika benar print ya
-else printf("Case #%d: TIDAK\n",i); //jika salah print tidak }
-}
+#include<stdio.h> 
+#include<string.h> 
+//author : Evelyn Tjitrodjojo 
+int y[1000][1000]; 
+int benar; 
+void path(int l,int m,int b,int c,char x[][1000]){ //fungsi backtracking 
+  y[l][m]=1; 
+  if(l==0||l==b-1||m==0||m==c-1){ //batas backtracking 
+   benar=0; 
+   return; 
+  } 
+  if((x[l][m+1]=='#'||y[l][m+1]==1)&&(x[l-1][m]=='#'||y[l-1][m]==1) &&(x[l][m-1]=='#'||y[l][m-1]==1)&&(x[l+1][m]=='#'||y[l+1][m]==1)){ 
+   benar=1; //batas backtracking 
+   return; 
+  } 
+   
+  if (m+1<c&&x[l][m+1]!='#'&&y[l][m+1]==0) path(l,m+1,b,c,x); 
+  if (l-1<b&&x[l-1][m]!='#'&&y[l-1][m]==0) path(l-1,m,b,c,x); 
+  if (m-1<c&&x[l][m-1]!='#'&&y[l][m-1]==0) path(l,m-1,b,c,x); 
+  if (l+1<b&&x[l+1][m]!='#'&&y[l+1][m]==0) path(l+1,m,b,c,x); 
+ } //rekursif backtracking 
+  
+int main(){ 
+ int a,b,c,l,m; 
+ int i,j,k; 
+ char x[1000][1000]; 
+ scanf("%d",&a); //input testcase 
+ for(i=1;i<=a;i++){ 
+  scanf("%d %d",&b,&c); //input ordo 
+  memset(y,0,sizeof(y)); //set semua nilai array y = 0 
+  benar=0; 
+  getchar(); //utk mengambil enter 
+  for(j=0;j<b;j++){ 
+   for(k=0;k<c;k++){ 
+    scanf("%c",&x[j][k]); //input matriks char 
+   } 
+  getchar(); 
+  } 
+  for(j=0;j<b;j++){ 
+   for(k=0;k<c;k++){ 
+    if(x[j][k]=='.'&&y[j][k]==0){ //jika terdpt �.� 
+     l=j; //mencatat lokasi 
+     m=k; 
+     path(l,m,b,c,x); //backtracking 
+     if(benar==1)break; 
+     //jika sdh benar lgs break 
+    } 
+   } 
+   if(benar==1)break; 
+  } 
+  if(benar==1)printf("Case #%d: YA\n",i); //jika benar print ya 
+  else printf("Case #%d: TIDAK\n",i); //jika salah print tidak 
+ } 
+} 
