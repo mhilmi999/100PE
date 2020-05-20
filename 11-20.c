@@ -12,7 +12,8 @@ Source :
 int x[25001];
 int main(){
 int i=0;
-while (scanf("%d",&x[i])!=EOF){ //diulang sampai EOF i++; //scanf array ke i
+while (scanf("%d",&x[i])!=EOF){ //diulang sampai 
+  EOF i++; //scanf array ke i
 }
 while (i--){
 printf("%d\n",x[i]); //print array
@@ -39,7 +40,8 @@ Source :
 int main(){
 int arr[1001];
 int a,n=0,m,modus=0,x,y,b;
-scanf("%d",&m); //input angka for(a=0;a<1001;a++)arr[a]=0;
+scanf("%d",&m); //input angka 
+for(a=0;a<1001;a++)arr[a]=0;
 for(b=0;b<m;b++){
 scanf("%d",&n); //input angka yg yg akan dicari modusnya
 arr[n]++; }
@@ -76,7 +78,8 @@ scanf("%d",&mabok[i][j]); //input matriks
 for (i=0;i<s;i++){
 for(j=0;j<t;j++){
 if(j<t-1){
-printf("%d ",mabok[t-j-1][i]); //print transpose matriks }
+printf("%d ",mabok[t-j-1][i]); //print transpose matriks 
+}
 else
 printf("%d",mabok[t-j-1][i]);
 }
@@ -106,14 +109,16 @@ for(j=0;j<n;j++){
 scanf("%d",&x[i][j]); //input matriks 1
 }
 }
-scanf("%d %d", &p, &q); //input ordo matriks kedua int y[p][q];
+scanf("%d %d", &p, &q); //input ordo matriks kedua 
+int y[p][q];
 for (i=0;i<p;i++){
 for(j=0;j<q;j++){
 scanf("%d",&y[i][j]); //input matriks kedua
 }
 }
 int z[m][q];
-for (i=0;i<m;i++){ //fungsi perkalian matriks for(j=0;j<q;j++){
+for (i=0;i<m;i++){ //fungsi perkalian matriks
+for(j=0;j<q;j++){
 z[i][j]=0;
 for(k=0;k<p;k++){
 z[i][j]+= x[i][k]*y[k][j];
@@ -122,7 +127,8 @@ z[i][j]+= x[i][k]*y[k][j];
 }
 for (i=0;i<m;i++){
 for(j=0;j<q;j++){
-printf("%d",z[i][j]); //print matriks yg dikalikan if(j<q-1){
+printf("%d",z[i][j]); //print matriks yg dikalikan 
+  if(j<q-1){
 printf(" "); //print spasi tiap angka
 }
 else printf("\n"); //print enter tiap ganti baris
@@ -150,9 +156,12 @@ while (T--){
 scanf("%d",&N); //input angka
 if (N==0) printf("%d\n",N); //jika 0 lgs print
 else {while (N%10==0){
-//untuk menghilangkan 0 diblkg angka sblm dibalik N=N/10; //angka dibagi 10
+//untuk menghilangkan 0 diblkg angka sblm dibalik 
+N=N/10; //angka dibagi 10
 }
-while (N>0){ //dibalik semua bilangannya hingga >0 b=N%10; //di modulo utk mengetahui angka belakangnya N=N/10; //dibagi sepuluh
+while (N>0){ //dibalik semua bilangannya hingga >0 
+b=N%10; //di modulo utk mengetahui angka belakangnya 
+N=N/10; //dibagi sepuluh
 printf("%d",b); //diprint
 }
 printf("\n");
@@ -171,50 +180,61 @@ Input :
 Output :
 Mencetak string kata akhir yang diminta
 Source :
-#include<stdio.h>
-#include<string.h>
-//author : Evelyn Tjitrodjojo
-int main(){
-char s1[1001],s2[1001],s3[1001],s4[1001];
-int i,j,start,en,tambah,m;
-scanf("%s",s1); //input kata utama
-scanf("%s",s2); //input kata kedua
-scanf("%s",s3); //input kata ketiga
-scanf("%s",s4); //input kata ketiga for(i=0;i<=strlen(s1)-strlen(s2);i++){
-//fungsi untuk mengetahui kata pertama yg sama dengan kata kedua int sama=1;
-for(j=0;j<strlen(s2);j++){
-if(s1[i+j]!=s2[j]){
-sama=0;
-}
-}
-if(sama){
-start=i;
-en=i+strlen(s2)-1;
-break;
-}
-}
-for(i=0;i<=strlen(s1)-strlen(s3);i++){
-//fungsi untuk menambah kata ketiga ke kata pertama int sama=1;
-if(i>=start && i<=en) continue; for(j=0;j<strlen(s3);j++){ while((i+j)>=start&&(i+j)<=en) i++; if(s1[i+j]!=s3[j]){
-sama=0;
-break;
-}
-}
-if(sama){ tambah=i+strlen(s3)-1; break;
-}
-}
-for(i=0;i<strlen(s1);i++){
-//fungsi print kata akhir yg diminta if(i>=start && i<=en){
-continue;
-}
-printf("%c",s1[i]);
-if(i==tambah){
-printf("%s",s4);
-}
-}
-printf("\n");
+#include<stdio.h> 
+#include<string.h> 
+//author : Evelyn Tjitrodjojo 
+int main(){ 
+ char s1[1001],s2[1001],s3[1001],s4[1001]; 
+ int i,j,start,en,tambah,m; 
+ scanf("%s",s1); //input kata utama 
+ scanf("%s",s2); //input kata kedua 
+ scanf("%s",s3); //input kata ketiga 
+ scanf("%s",s4); //input kata ketiga 
+ for(i=0;i<=strlen(s1)-strlen(s2);i++){ 
+ //fungsi untuk mengetahui kata pertama yg sama dengan kata kedua 
+  int sama=1; 
+  for(j=0;j<strlen(s2);j++){ 
+   if(s1[i+j]!=s2[j]){ 
+   sama=0; 
+   }  
+  } 
+  if(sama){ 
+   start=i; 
+   en=i+strlen(s2)-1; 
+   break; 
+  } 
+ } 
+ for(i=0;i<=strlen(s1)-strlen(s3);i++){ 
+ //fungsi untuk menambah kata ketiga ke kata pertama 
+  int sama=1; 
+  if(i>=start && i<=en) continue; 
+  for(j=0;j<strlen(s3);j++){ 
+  while((i+j)>=start&&(i+j)<=en) i++; 
+   if(s1[i+j]!=s3[j]){ 
+    sama=0; 
+    break; 
+   } 
+  } 
+  if(sama){ 
+   tambah=i+strlen(s3)-1; 
+   break; 
+  } 
+ } 
+ for(i=0;i<strlen(s1);i++){ 
+ //fungsi print kata akhir yg diminta 
+  if(i>=start && i<=en){ 
+   continue; 
 
-return 0; }
+  } 
+  printf("%c",s1[i]); 
+  if(i==tambah){ 
+   printf("%s",s4); 
+  } 
+ } 
+ printf("\n"); 
+ return 0; 
+} 
+ 
 
 
 
@@ -228,13 +248,15 @@ Cetak dari indeks paling belakang ke depan
 Source :
 #include <stdio.h>
 #include <string.h>
-//author : Evelyn Tjitrodjojo int main()
+//author : Evelyn Tjitrodjojo 
+int main()
 {
 int n,t;
 char arr[1100]; gets(arr); //input kata
 n= strlen(arr);
 for(t=n-1;t>=0;t--)
-printf("%c", arr[t]); //print dr blkg printf("\n");
+printf("%c", arr[t]); //print dr blkg 
+printf("\n");
 }
 
 
@@ -262,7 +284,8 @@ if(i%b==0){ //jika input di modulo b = 0
 c=1; //penanda bisa di modulo
 a++; //flag
 }
-if(a>2) break; //jika angka bisa di mod lbh dr dua kali dibreak b++;
+if(a>2) break; //jika angka bisa di mod lbh dr dua kali dibreak 
+  b++;
 }
 if(c==1&&a>2) printf("TIDAK\n");
 //jika angka dpt di mod lbh dr dua kali print tidak
@@ -318,9 +341,12 @@ Source :
 //author : Evelyn Tjitrodjojo
 int main(){
 int N;
-while(scanf("%d",&N)!=EOF){ //input sampai EOF while(N%2==0){ //perulangan angka dibagi 2 N=N/2;
+while(scanf("%d",&N)!=EOF){ //input sampai EOF 
+ while(N%2==0){ //perulangan angka dibagi 2 
+   N=N/2;
 }
-if(N==1){ //jika hasilnya satu berarti dua pangkat printf("TRUE\n");
+if(N==1){ //jika hasilnya satu berarti dua pangkat 
+  printf("TRUE\n");
 }
 else
 printf("FALSE\n");
